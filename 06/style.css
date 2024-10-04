@@ -1,0 +1,55 @@
+
+
+.shapes{
+    font-size:5em;
+    color: white;
+}
+
+.emojis{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: -100px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.userinputtext{
+    position: relative;
+    margin-top: 100px;
+}   
+
+.userinput,.computerinput{
+    font-size: 5em;
+}
+.game{
+    display: flex;
+    justify-content: space-around;
+}
+
+.computerinputtext
+{
+    margin-top: 100px;
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+
+.result{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+}
+
+#res:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+#ress:hover{
+    background-color: black;
+    color: white;
+}
