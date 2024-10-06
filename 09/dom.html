@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width= , initial-scale=1.0"> -->
+    <title>DOM</title>
+</head>
+<body>
+    <p>Amazon Shipping Calculator</p>
+
+     <h3>Ordres Under $40 =+$10 Shipping</h3>
+     <h3>Orders Over $40 = FREE Shipping</h3>
+
+      <input type="number"class="inputval" placeholder="Enter the amount in $">
+      <button onclick="calculate(event)">Calculate</button>
+
+
+
+      <script>
+           function calculate(event){
+               let s=document.querySelector(".inputval");
+               n=Number(s.value);
+               let b=document.querySelector('.Name');
+               if(!b){
+                  b=document.createElement("h1");
+                  b.setAttribute("class",'Name');
+                  document.body.appendChild(b);
+               }
+                if(n>40){
+                 b.textContent=n+10;
+                }
+                else{
+                 b.textContent=n;
+                }
+           }
+      </script>
+</body>
+</html>
